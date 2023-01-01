@@ -2406,6 +2406,203 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "4a0f34bf-d113-42e0-8f3c-422627b597fb",
+    "name": "Test_Cart_Additional_Items",
+    "commands": [{
+      "id": "97edf178-6f6d-4f3b-8884-3b4a1a50ddd4",
+      "comment": "",
+      "command": "open",
+      "target": "/cart",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79910162-5345-4772-8595-686bdc8d338c",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=/html/body/div[1]/div[1]/main/table/tbody/tr[1]/td[6]/form/button/i",
+      "targets": [],
+      "value": "cart_count"
+    }, {
+      "id": "54b8f847-916e-4e34-93d8-63a1125d925b",
+      "comment": "",
+      "command": "echo",
+      "target": "${cart_count}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bca9b00c-0821-4159-a24e-41182815f81d",
+      "comment": "",
+      "command": "while",
+      "target": "${cart_count} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5812646-4843-4e2e-bf0e-1e09d6ca970d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-0 > .item-actions i",
+      "targets": [
+        ["css=.item-0 > .item-actions i", "css:finder"],
+        ["xpath=//table[@id='cart-main']/tbody/tr/td[6]/form/button/i", "xpath:idRelative"],
+        ["xpath=//td[6]/form/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b70e3bd-5ed7-405c-bd35-d0083a87b643",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=/html/body/div[1]/div[1]/main/table/tbody/tr[1]/td[6]/form/button/i",
+      "targets": [],
+      "value": "cart_count"
+    }, {
+      "id": "f3a73618-8fc1-4bb4-aa1a-b63a863eba97",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc5f9eaf-8802-410e-b969-b3a28547f625",
+      "comment": "",
+      "command": "click",
+      "target": "css=#logo > img",
+      "targets": [
+        ["css=#logo > img", "css:finder"],
+        ["xpath=//img[@alt='Лаптопи от laptop.bg']", "xpath:img"],
+        ["xpath=//a[@id='logo']/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3d6cf99-6f62-4662-9d05-488a19c82617",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 0",
+      "targets": [],
+      "value": "laptop_count"
+    }, {
+      "id": "114bd35f-106b-45f6-b1af-4c874cb0cbe0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.current > ul > li:nth-child(1) > a",
+      "targets": [
+        ["css=.current > ul > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//header[@id='branding']/div/nav/div/ul/li/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/laptops')]", "xpath:href"],
+        ["xpath=//li/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49d8e779-3631-4830-b2da-b00d7f04920b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.focus > a > h4",
+      "targets": [
+        ["css=.focus > a > h4", "css:finder"],
+        ["xpath=//header[@id='branding']/div/nav/div/ul/li/ul/li/a/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Лаптопи')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dc0f496-3c24-4635-a02d-46fef84a723f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product_87074 h2",
+      "targets": [
+        ["css=#product_87074 h2", "css:finder"],
+        ["xpath=//li[@id='product_87074']/article/a/h2", "xpath:idRelative"],
+        ["xpath=//li[2]/article/a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Acer TravelMate Spin (TMB311R-31)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06b82730-ad1e-45c4-8e92-7093b57a4da9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Технически характеристики",
+      "targets": [
+        ["linkText=Технически характеристики", "linkText"],
+        ["css=.on:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Технически характеристики')]", "xpath:link"],
+        ["xpath=//article[@id='product-page']/div/nav/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#characteristics')])[2]", "xpath:href"],
+        ["xpath=//article/div/nav/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Технически характеристики')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b436c4b-f341-4947-ab11-b1897447c1d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#InternalRamMemory .options:nth-child(4) > label",
+      "targets": [
+        ["css=#InternalRamMemory .options:nth-child(4) > label", "css:finder"],
+        ["xpath=//tr[@id='InternalRamMemory']/td/div[4]/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75622a2f-b810-44ba-8bd4-d74b3a4eaeee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-to-cart span",
+      "targets": [
+        ["css=.add-to-cart span", "css:finder"],
+        ["xpath=//section[@id='features']/div/div/div[5]/button/span", "xpath:idRelative"],
+        ["xpath=//div[5]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d029161-5bb5-4b28-9ecc-bfdf0a778086",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .fa-shopping-cart",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6115fb3f-1290-419c-991e-3fae0ffecafa",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "1919,457"
+    }, {
+      "id": "84dc9e3b-1628-4ca6-a65d-f6769720b301",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "1919,457"
+    }, {
+      "id": "4d03b0b2-db80-49d5-93b3-288736a35793",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "1919,457"
+    }, {
+      "id": "6cb2cf00-7b7b-4f18-b4ce-f74a33c36372",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tbody:nth-child(2) > .small:nth-child(2) > td:nth-child(1)",
+      "targets": [
+        ["css=tbody:nth-child(2) > .small:nth-child(2) > td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='cart-main']/tbody/tr[2]/td", "xpath:idRelative"],
+        ["xpath=//main/table/tbody/tr[2]/td", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "a7e5b1fb-7e06-4cbc-b9ff-a9a13ea5c55d",
